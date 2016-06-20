@@ -189,7 +189,7 @@ namespace Microsoft.MSR.CNTK.Extensibility.Managed.CSEvalClient
                     model.CreateNetwork(networkDescription, deviceId: -1);
 
                     // Prepare input value in the appropriate structure and size
-                    var inputs = new Dictionary<string, List<float>>() { { "features1", new List<float>() { 1.0f } } };
+                    var inputs = new Dictionary<string, List<float>>() { { "features", new List<float>() { 1.0f } } };
 
                     // We can call the evaluate method and get back the results (single layer output)...
                     var outDims = model.GetNodeDimensions(NodeGroup.Output);
